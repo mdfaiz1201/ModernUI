@@ -1,0 +1,48 @@
+#hero{
+  /* background-color: blue !important; */
+  background: url("./Images/backgroundPattern/moutain.svg") no-repeat;
+  background-size: 34%;
+  background-position: center bottom;
+}
+
+#on-demand{
+  /* background-color: blue !important; */
+  background: url("./Images/backgroundPattern/green.svg") no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+#industries{
+  background: url("./Images/backgroundPattern/moutain.svg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size:40%;
+}
+.divider{
+  background-image: url("./Images/horizonatal.png"); 
+}
+
+#Testimonials{
+  background-image: url("./Images/backgroundPattern/blue.svg");
+}
+
+#reviews{
+  width: 80%;
+}
+.scale-y-105{
+  width: 100%
+}
+.scale-y-105:hover {
+  transform: scaleY(1.5);
+}
+.fixed-w{
+  width: 80px !important;
+  height: 80px !important;
+}
+.sidebar {
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+}
+.sidebar-open {
+  transform: translateX(0%);
+}
+
