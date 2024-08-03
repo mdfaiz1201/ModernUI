@@ -1,48 +1,85 @@
-#hero{
-  /* background-color: blue !important; */
-  background: url("./Images/backgroundPattern/moutain.svg") no-repeat;
+#hero {
+  background: url("./Images/backgroundPattern/mountain.svg") no-repeat;
   background-size: 34%;
   background-position: center bottom;
 }
 
-#on-demand{
-  /* background-color: blue !important; */
+#on-demand {
   background: url("./Images/backgroundPattern/green.svg") no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center;
-}
-#industries{
-  background: url("./Images/backgroundPattern/moutain.svg");
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size:40%;
-}
-.divider{
-  background-image: url("./Images/horizonatal.png"); 
 }
 
-#Testimonials{
+#industries {
+  background: url("./Images/backgroundPattern/mountain.svg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 40%;
+}
+
+.divider {
+  background-image: url("./Images/horizontal.png"); 
+}
+
+#Testimonials {
   background-image: url("./Images/backgroundPattern/blue.svg");
 }
 
-#reviews{
+#reviews {
   width: 80%;
 }
-.scale-y-105{
-  width: 100%
+
+.industry-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
 }
-.scale-y-105:hover {
+
+.industry-image:hover {
   transform: scaleY(1.5);
 }
-.fixed-w{
+
+.fixed-w {
   width: 80px !important;
   height: 80px !important;
 }
+
 .sidebar {
   transition: transform 0.3s ease;
   transform: translateX(100%);
 }
+
 .sidebar-open {
   transform: translateX(0%);
 }
 
+.scroller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto !important;
+  padding: 10px;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  height: 100%;
+  align-items: center;
+}
+
+.image-rectangle {
+  min-width: 200px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* Optional: Hide scrollbar */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
